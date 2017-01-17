@@ -1,6 +1,8 @@
 # pep302_example
 This is a test for Python Import Hooks, defined on PEP302.
 
+The ImportHooke code is inside the *`__init__.py`* file under the *example* directory.
+
 Mainly we have one package **example** that contains three modules (**v1**, **v2** and **v3**).
 
 Each module contains two submodules (**myclass** and **myenum**). The difference between the modules are on the **enums** definitions, and the classes inherite from the previous versions (e.g.: **example.v2.myclass.MyClass** inherits from **example.v1.myclass.MyClass**), but v2.myclass.MyClass should use the enum from v2.
